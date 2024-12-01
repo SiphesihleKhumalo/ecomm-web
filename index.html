@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneaker Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Sneaker Shop</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="cart-icon">
+          <img src="images/cart-icon.png" alt="Cart" width="30" />
+          <span id="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <h1>Step Up Your Style</h1>
+      <p>Find the latest sneakers to match your vibe.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="images/sneaker1.jpg" alt="Sneaker 1" />
+          <h3>Air Runner</h3>
+          <p>$120</p>
+          <button class="add-to-cart" data-name="Air Runner" data-price="120">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="images/sneaker2.jpg" alt="Sneaker 2" />
+          <h3>Classic Comfort</h3>
+          <p>$90</p>
+          <button
+            class="add-to-cart"
+            data-name="Classic Comfort"
+            data-price="90"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="images/sneaker3.jpg" alt="Sneaker 3" />
+          <h3>Street Style</h3>
+          <p>$150</p>
+          <button class="add-to-cart" data-name="Street Style" data-price="150">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        At Sneaker Shop, we’re passionate about combining comfort and style.
+        Whether you're running, walking, or just chilling, we've got the perfect
+        sneakers for every occasion.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Sneaker Shop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
